@@ -16,7 +16,7 @@ tagline:
   </h2>
 
   <div class="row">
-    
+
     {% if post.figure %}
 
     <img class="col-sm-3" src="{{ post.figure }}"></img>
@@ -55,9 +55,9 @@ tagline:
 
 </article>
 {% endfor %}
-<hr/>
+<hr />
 
-<ul class="pager"> 
+<ul class="pager">
 
   {% if paginator.previous_page %}
   <li class="previous">
@@ -72,7 +72,7 @@ tagline:
     <a>&larr; 上一页</a>
   </li>
   {% endif %}
-  
+
   <li>
     <span class="page_number">页码：{{ paginator.page }} / {{ paginator.total_pages }}</span>
   </li>
@@ -83,7 +83,7 @@ tagline:
   </li>
   {% else %}
   <li class="next disabled">
-    <a>下一页 &rarr;</a>        
+    <a>下一页 &rarr;</a>
   </li>
   {% endif %}
 
