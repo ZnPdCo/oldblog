@@ -7,7 +7,7 @@ highlighter: rouge
 markdown: kramdown
 disqus: ZnPdCo
 google_analytics: ZnPdCo
-title: ZnPdCo
+title: ZnPdCo 的博客
 
 kramdown:
   math_engine: null
@@ -19,13 +19,12 @@ defaults:
     values:
       title: ZnPdCo
 
-description: Stylish Jekyll Theme
+description: ZnPdCo 的博客
 author:
   name: ZnPdCo
   email: poiuytreertyuiop@outlook.com
   github: ZnPdCo
-  bio: Your stylish, minimalist theme!
-  email_md5: 2544A0F87F46741BA8E070E674F0B2F1
+  bio: MLE
   icon: https://cdn.luogu.com.cn/upload/image_hosting/zzlxiek3.png
 
 rss_path: feed.xml
