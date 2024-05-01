@@ -3,7 +3,6 @@
 a {
     transition: background 0.15s,
             border .15s;
-    position: relative;
     padding: 3px;
 }
 a:link {
