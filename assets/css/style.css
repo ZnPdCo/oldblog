@@ -1,5 +1,26 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 
+a {
+    transition: background 0.15s,
+            border .15s;
+    position: relative;
+    padding: 3px;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+a:active {
+    text-decoration: none;
+}
+
 body{
 	color: #2c3e50;
 }
