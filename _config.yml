@@ -9,6 +9,9 @@ disqus: ZnPdCo
 google_analytics: ZnPdCo
 title: ZnPdCo
 
+kramdown:
+  math_engine: null
+
 defaults:
   -
     scope:
