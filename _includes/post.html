@@ -1,6 +1,12 @@
 <div class="page-header">
 	{% if post.figure %}
-	<img src="{{ page.figure }}" style="width: 100%;">{{ page.title }}</img>
+	<img src="{{ post.figure }}" style="width: 100%;">{{ page.title }}1</img>
+	{% endif %}
+	{% if page.figure %}
+	<img src="{{ page.figure }}" style="width: 100%;">{{ page.title }}2</img>
+	{% endif %}
+	{% if figure %}
+	<img src="{{ figure }}" style="width: 100%;">{{ page.title }}3</img>
 	{% endif %}
 	<h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
