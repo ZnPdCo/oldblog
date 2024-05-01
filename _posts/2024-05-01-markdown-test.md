@@ -3,7 +3,8 @@ layout: post
 title: Markdown 测试
 categories: [博客, 测试]
 tags: [博客, 测试]
-shortinfo: markdown 支持性测试（不是所有 markdown 语法都支持，部分~~因为作者懒~~还没实现）
+shortinfo: markdown 支持性测试（不是所有 markdown 语法都支持，部分<del>因为作者懒</del>还没实现）
+figure: https://cdn.luogu.com.cn/upload/image_hosting/zflatz83.png
 ---
 
 <a class="btn btn-default" href="https://github.com/dbtek/dbyll">按钮测试</a>
@@ -206,6 +207,8 @@ cond(no)->op
  
 ## 5.7 MathJax 公式
  
+当前我们的公式渲染由 MathJax3 完成。
+
 $ 表示行内公式： 
  
 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
