@@ -19,7 +19,7 @@ comments: true
  
 引用:
  
-> 引用ZnPdCo官方的话, 为什么要做ZnPdCo, 原因是...
+> 引用 Github 官方的话, 为什么要做 Github Pages, 原因是...
  
 有充列表:
  1. 支持Vim
@@ -41,16 +41,16 @@ comments: true
  
 ## 3. 标题
  
-以下是各级标题, 最多支持5级标题
+以下是各级标题, 最多支持 6 级标题
  
-```
+
 # h1
 ## h2
 ### h3
 #### h4
-##### h4
-###### h5
-```
+##### h5
+###### h6
+
  
 ## 4. 代码
  
@@ -99,9 +99,9 @@ Markdown 扩展支持:
 * 表格
 * 定义型列表
 * Html 标签
-* 脚注
-* 目录
-* 时序图与流程图
+* 脚注（有时间再实现）
+* 目录（有时间再实现）
+* 时序图与流程图（有时间再实现）
 * MathJax 公式
  
 ## 5.1 表格
@@ -166,20 +166,20 @@ Pipe     | \$1
  
 **提示**, 如果想对图片的宽度和高度进行控制, 你也可以通过img标签, 如:
  
-<img src="http://ZnPdCo.com/images/logo/ZnPdCo_icon_blue.png" width="50px" />
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/zzlxiek3.png" width="50px" />
  
-## 5.4 脚注
+## 5.4 脚注（有时间再实现）
  
 ZnPdCo[^footnote]来创建一个脚注
   [^footnote]: ZnPdCo是一款强大的开源云笔记产品.
  
-## 5.5 目录
+## 5.5 目录（有时间再实现）
  
 通过 `[TOC]` 在文档中插入目录, 如:
  
 [TOC]
  
-## 5.6 时序图与流程图
+## 5.6 时序图与流程图（有时间再实现）
  
 ```sequence
 Alice->Bob: Hello Bob, how are you?

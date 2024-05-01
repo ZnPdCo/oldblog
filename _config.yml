@@ -5,7 +5,6 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-disqus: ZnPdCo
 google_analytics: ZnPdCo
 title: ZnPdCo 的博客
 
@@ -17,14 +16,14 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: ZnPdCo
+      title: ZnPdCo 的博客
 
 description: ZnPdCo 的博客
 author:
   name: ZnPdCo
   email: poiuytreertyuiop@outlook.com
   github: ZnPdCo
-  bio: MLE
+  bio: 我是菜鸡自动姬
   icon: https://cdn.luogu.com.cn/upload/image_hosting/zzlxiek3.png
 
 rss_path: feed.xml
