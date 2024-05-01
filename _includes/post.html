@@ -92,7 +92,7 @@
       </section>
 
       <section class="col-sm-6 author">
-        <img src="//www.gravatar.com/avatar/{{site.author.email_md5}}" class="img-rounded author-image" />
+        <img src="{{site.author.icon}}" class="img-rounded author-image" />
         <h4 class="section-title author-name">{{site.author.name}}</h4>
         <p class="author-bio">{{site.author.bio}}</p>
       </section>
@@ -102,14 +102,14 @@
 
 		<ul class="pager">
 		  {% if page.previous %}
-		  <li class="previous"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+		  <li class="previous"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 上一篇</a></li>
 		  {% else %}
-		  <li class="previous disabled"><a>&larr; 上一篇文章</a></li>
+		  <li class="previous disabled"><a>&larr; 上一篇</a></li>
 		  {% endif %}
 		  {% if page.next %}
-		  <li class="next"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+		  <li class="next"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li>
 		  {% else %}
-			<li class="next disabled"><a>下一篇文章 &rarr;</a>
+			<li class="next disabled"><a>下一篇 &rarr;</a>
 		  {% endif %}
 		</ul>
 
