@@ -3,7 +3,7 @@
 
 
 code {
-    font-family: 'Fira Code';
+    font-family: 'Fira Code', Monaco, Menlo, Consolas, "Courier New", monospace !important;
 }
 
 li {
