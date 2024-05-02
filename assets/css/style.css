@@ -287,12 +287,12 @@ article.home h4 a:hover {
 	color: #e74c3c;
 }
 
-.article_body h1,
-.article_body h2,
-.article_body h3,
-.article_body h4,
-.article_body h5,
-.article_body h6 {
+.article_body h1 a,
+.article_body h2 a,
+.article_body h3 a,
+.article_body h4 a,
+.article_body h5 a,
+.article_body h6 a {
 	font-family: 'Ubuntu', sans-serif;
 	color: #f2756a;
 }
