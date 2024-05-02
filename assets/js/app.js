@@ -55,7 +55,7 @@
         }
         return [i - 1, e];
       }
-      var toc = dfs(1, 1)[0];
+      var toc = dfs(1, 1)[1];
       $('.sidebar').append(toc);
     }
   };
