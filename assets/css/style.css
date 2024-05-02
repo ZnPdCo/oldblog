@@ -1,5 +1,9 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 
+ul {
+    padding-left: 3px;
+}
+
 a {
 	transition: background 0.15s,
 		border .15s;
@@ -236,6 +240,34 @@ article.home h1 a:hover,
 article.home h2 a:hover,
 article.home h3 a:hover,
 article.home h4 a:hover {
+	color: #e74c3c;
+}
+
+.article_body h2,
+.article_body h3,
+.article_body h4,
+.article_body h5,
+.article_body h1,
+.article_body h6 {
+	font-family: 'Ubuntu', sans-serif;
+	color: #f2756a;
+}
+
+.article_body h1 a,
+.article_body h2 a,
+.article_body h3 a,
+.article_body h4 a,
+.article_body h5 a,
+.article_body h6 a {
+	color: #f2756a;
+}
+
+.article_body h1 a:hover,
+.article_body h2 a:hover,
+.article_body h3 a:hover,
+.article_body h4 a:hover,
+.article_body h5 a:hover,
+.article_body h6 a:hover {
 	color: #e74c3c;
 }
 
