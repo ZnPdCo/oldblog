@@ -5,7 +5,6 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-google_analytics: ZnPdCo
 title: ZnPdCo 的博客
 
 kramdown:

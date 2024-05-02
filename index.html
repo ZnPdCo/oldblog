@@ -10,53 +10,53 @@ tagline:
 
 <article class="home">
 
-  <span class="post-date">
-    {{ post.date | date: "%F" }}
-  </span>
+    <span class="post-date">
+        {{ post.date | date: "%F" }}
+    </span>
 
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
+    <h2>
+        <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}<small>[置顶]</small></a>
+    </h2>
 
-  <div class="row" style="margin-left: 0;">
+    <div class="row" style="margin-left: 0;">
 
-    {% if post.figure %}
+        {% if post.figure %}
 
-    <div class="col-sm-3"><img src="{{ post.figure }}"></img></div>
-    <div class="col-sm-7">
-      {% if post.fullview %}
-      {{ post.content }}
-      {% else %}
-      {% if post.shortinfo %}
-      {{ post.shortinfo }}
-      {% elsif post.description %}
-      {{ post.description }}
-      {% else %}
-      {{ post.excerpt }}
-      {% endif %}
-      {% endif %}
+        <div class="col-sm-3"><img src="{{ post.figure }}"></img></div>
+        <div class="col-sm-7">
+            {% if post.fullview %}
+            {{ post.content }}
+            {% else %}
+            {% if post.shortinfo %}
+            {{ post.shortinfo }}
+            {% elsif post.description %}
+            {{ post.description }}
+            {% else %}
+            {{ post.excerpt }}
+            {% endif %}
+            {% endif %}
+        </div>
+
+        {% else %}
+
+        {% if post.fullview %}
+        {{ post.content }}
+        {% else %}
+        {% if post.shortinfo %}
+        {{ post.shortinfo }}
+        {% elsif post.description %}
+        {{ post.description }}
+        {% else %}
+        {{ post.excerpt }}
+        {% endif %}
+        {% endif %}
+
+        {% endif %}
     </div>
 
-    {% else %}
+    <br />
 
-    {% if post.fullview %}
-    {{ post.content }}
-    {% else %}
-    {% if post.shortinfo %}
-    {{ post.shortinfo }}
-    {% elsif post.description %}
-    {{ post.description }}
-    {% else %}
-    {{ post.excerpt }}
-    {% endif %}
-    {% endif %}
-
-    {% endif %}
-  </div>
-
-  <br />
-
-  <a class="btn btn-default" href="{{ site.BASE_PATH }}{{ post.url }}">继续阅读 &rarr;</a>
+    <a class="btn btn-default" href="{{ site.BASE_PATH }}{{ post.url }}">继续阅读 &rarr;</a>
 
 </article>
 {% endif %}
@@ -70,53 +70,53 @@ tagline:
 
 <article class="home">
 
-  <span class="post-date">
-    {{ post.date | date: "%F" }}
-  </span>
+    <span class="post-date">
+        {{ post.date | date: "%F" }}
+    </span>
 
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
+    <h2>
+        <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
 
-  <div class="row" style="margin-left: 0;">
+    <div class="row" style="margin-left: 0;">
 
-    {% if post.figure %}
+        {% if post.figure %}
 
-    <div class="col-sm-3"><img src="{{ post.figure }}"></img></div>
-    <div class="col-sm-7">
-      {% if post.fullview %}
-      {{ post.content }}
-      {% else %}
-      {% if post.shortinfo %}
-      {{ post.shortinfo }}
-      {% elsif post.description %}
-      {{ post.description }}
-      {% else %}
-      {{ post.excerpt }}
-      {% endif %}
-      {% endif %}
+        <div class="col-sm-3"><img src="{{ post.figure }}"></img></div>
+        <div class="col-sm-7">
+            {% if post.fullview %}
+            {{ post.content }}
+            {% else %}
+            {% if post.shortinfo %}
+            {{ post.shortinfo }}
+            {% elsif post.description %}
+            {{ post.description }}
+            {% else %}
+            {{ post.excerpt }}
+            {% endif %}
+            {% endif %}
+        </div>
+
+        {% else %}
+
+        {% if post.fullview %}
+        {{ post.content }}
+        {% else %}
+        {% if post.shortinfo %}
+        {{ post.shortinfo }}
+        {% elsif post.description %}
+        {{ post.description }}
+        {% else %}
+        {{ post.excerpt }}
+        {% endif %}
+        {% endif %}
+
+        {% endif %}
     </div>
 
-    {% else %}
+    <br />
 
-    {% if post.fullview %}
-    {{ post.content }}
-    {% else %}
-    {% if post.shortinfo %}
-    {{ post.shortinfo }}
-    {% elsif post.description %}
-    {{ post.description }}
-    {% else %}
-    {{ post.excerpt }}
-    {% endif %}
-    {% endif %}
-
-    {% endif %}
-  </div>
-
-  <br />
-
-  <a class="btn btn-default" href="{{ site.BASE_PATH }}{{ post.url }}">继续阅读 &rarr;</a>
+    <a class="btn btn-default" href="{{ site.BASE_PATH }}{{ post.url }}">继续阅读 &rarr;</a>
 
 </article>
 {% endif %}
@@ -125,32 +125,33 @@ tagline:
 
 <ul class="pager">
 
-  {% if paginator.previous_page %}
-  <li class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; 上一页</a>
+    {% if paginator.previous_page %}
+    <li class="previous">
+        {% if paginator.previous_page == 1 %}
+        <a href="{{ site.BASE_PATH }}/">&larr; 上一页</a>
+        {% else %}
+        <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr;
+            上一页</a>
+        {% endif %}
+    </li>
     {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; 上一页</a>
+    <li class="previous disabled">
+        <a>&larr; 上一页</a>
+    </li>
     {% endif %}
-  </li>
-  {% else %}
-  <li class="previous disabled">
-    <a>&larr; 上一页</a>
-  </li>
-  {% endif %}
 
-  <li>
-    <span class="page_number">页码：{{ paginator.page }} / {{ paginator.total_pages }}</span>
-  </li>
+    <li>
+        <span class="page_number">页码：{{ paginator.page }} / {{ paginator.total_pages }}</span>
+    </li>
 
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">下一页 &rarr;</a>
-  </li>
-  {% else %}
-  <li class="next disabled">
-    <a>下一页 &rarr;</a>
-  </li>
-  {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">下一页 &rarr;</a>
+    </li>
+    {% else %}
+    <li class="next disabled">
+        <a>下一页 &rarr;</a>
+    </li>
+    {% endif %}
 
 </ul>
