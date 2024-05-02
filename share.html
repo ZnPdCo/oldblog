@@ -1,0 +1,19 @@
+---
+layout: page
+tagline:
+---
+
+<div id="qrcode"></div>
+<script>
+    const paramsStr = window.location.search
+    const params = new URLSearchParams(paramsStr)
+    if (!navigator.share) {
+        
+        new QRCode(document.getElementById("qrcode"), params.get('url'));  // 设置要生成二维码的链接
+    } else {
+        navigator.share({
+            url: params.get('url'),
+        });
+    }
+</script>
+
