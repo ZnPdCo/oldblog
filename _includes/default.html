@@ -18,7 +18,7 @@
 
 	<!-- Le styles -->
 	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.2/css/all.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
 
@@ -48,18 +48,18 @@
 				<span class="icon-bar"></span>
 			</button>
 			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
-				<i class="fa fa-github"></i>
+			<a type="button" class="navbar-toggle nav-link" href="https://github.com/{{ site.author.github }}">
+				<i class="fa-brands fa-github-alt"></i>
 			</a>
 			{% endif %}
-			{% if site.author.twitter %}
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
-				<i class="fa fa-twitter"></i>
+			{% if site.author.bilibili %}
+			<a type="button" class="navbar-toggle nav-link" href="https://space.bilibili.com/{{ site.author.bilibili }}">
+				<i class="fa-brands fa-bilibili"></i>
 			</a>
 			{% endif %}
 			{% if site.author.email %}
 			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
-				<i class="fa fa-envelope"></i>
+				<i class="fa-solid fa-envelope"></i>
 			</a>
 			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
@@ -81,14 +81,14 @@
 	<!-- nav-menu-dropdown -->
 	<div class="btn-group hidden-xs" id="nav-menu">
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-			<i class="fa fa-bars"></i>
+			<i class="fa-solid fa-bars"></i>
 		</button>
 		<ul class="dropdown-menu" role="menu">
-			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>主页</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>合集</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>标签</a></li>
+			<li><a href="{{ site.BASE_PATH}}/"><i class="fa-solid fa-house"></i>主页</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa-solid fa-folder"></i>合集</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa-solid fa-tags"></i>标签</a></li>
 			<li class="divider"></li>
-			<li><a href="#"><i class="fa fa-arrow-up"></i>回到页面顶端</a></li>
+			<li><a href="#"><i class="fa-solid fa-arrow-up"></i>回到页面顶端</a></li>
 		</ul>
 	</div>
 

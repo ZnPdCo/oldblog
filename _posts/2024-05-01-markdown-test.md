@@ -4,7 +4,6 @@ title: Markdown 测试
 categories: [博客, 测试]
 tags: [博客, 测试]
 shortinfo: markdown 支持性测试（不是所有 markdown 语法都支持，部分<del>因为作者懒</del>还没实现）
-figure: https://cdn.luogu.com.cn/upload/image_hosting/zflatz83.png
 ---
 
 <a class="btn btn-default" href="https://github.com/dbtek/dbyll">按钮测试</a>
