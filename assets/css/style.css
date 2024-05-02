@@ -66,6 +66,10 @@ img:hover {
     opacity: 1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	color: #2c3e50;
 }

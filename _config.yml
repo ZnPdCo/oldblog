@@ -18,6 +18,7 @@ defaults:
     values:
       title: ZnPdCo 的博客
 
+timezone: Asia/Shanghai
 description: ZnPdCo 的博客
 author:
   name: ZnPdCo
