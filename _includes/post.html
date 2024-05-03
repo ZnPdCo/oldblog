@@ -69,10 +69,9 @@
         <div>
             <section class="share col-sm-6">
                 <h4 class="section-title">想把本文分享给你的朋友？</h4>
-                <a class="btn btn-default btn-sm facebook"
-                    onclick="window.open('https://assets.cnblogs.com/qrcode.html?url='+window.location.href, '手机扫码分享', 'width=490,height=530');return false;">
-                    <i class="fa-brands fa-weixin"></i>
-                    微信
+                <a class="btn btn-default btn-sm facebook" onclick="window.nativeShare.call()">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    分享一下！
                 </a>
             </section>
 
@@ -80,6 +79,8 @@
                 <img src="{{site.author.icon}}" style="height:35px;" class="img-rounded author-image" />
                 <h4 class="section-title author-name">{{site.author.name}}</h4>
                 <p class="author-bio">{{site.author.bio}}</p>
+                <p>发现问题？提出疑问？<a class="btn btn-default btn-sm" href="mailto:{{ site.author.email }}"><i
+                            class="fa-solid fa-envelope"></i>{{ site.author.email }}</a></p>
             </section>
         </div>
 
