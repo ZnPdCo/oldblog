@@ -33,8 +33,9 @@
         // initial activation
         activateTab();
 
+
         // 目录生成
-        if ($('.article_body').length == 1) {
+        function createTOC() {
             var ele = $('.article_body h1, .article_body h2, .article_body h3, .article_body h4, .article_body h5, .article_body h6');
             for (let i = 0; i < ele.length; i++) {
                 ele.eq(i).html(`<a href="#${ele.eq(i).prop('id')}">${ele.eq(i).html()}</a>`);
@@ -56,7 +57,11 @@
                 return [i - 1, e];
             }
             var toc = dfs(0, 1)[1];
-            $('.sidebar').append(toc);
+            $('.sidebar').append(`<div class="toc"></div>`);
+            $('.toc').append(toc);
+        }
+        if ($('.article_body').length == 1) {
+            createTOC();
         }
     };
 

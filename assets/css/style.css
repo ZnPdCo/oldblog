@@ -6,25 +6,25 @@ code {
     font-family: 'Fira Code', Monaco, Menlo, Consolas, "Courier New", monospace !important;
 }
 
-li {
-    list-style-type: square;
-}
-
-li a {
-    font-family: 'Ubuntu', sans-serif;
-    color: #f2756a;
-}
-
-li a:hover {
-    color: #e74c3c;
-}
-
-#contact-list+ul {
+.toc {
     overflow: auto;
     height: 350px;
 }
 
-ul {
+.toc li {
+    list-style-type: square;
+}
+
+.toc li a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #f2756a;
+}
+
+.toc li a:hover {
+    color: #e74c3c;
+}
+
+.toc ul {
     padding-left: 15px;
 }
 
