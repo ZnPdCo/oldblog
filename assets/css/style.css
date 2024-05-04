@@ -255,6 +255,7 @@ article {
 
 article {
     padding: 0 5% 0;
+    height: 200px;
 }
 
 article.home div a,
@@ -270,6 +271,7 @@ article.home pre a:hover {
 
 article img {
     max-width: 100%;
+    max-height: 200px;
 }
 
 h1,
