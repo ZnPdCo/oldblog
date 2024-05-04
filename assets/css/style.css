@@ -1,6 +1,9 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 @import url(//fonts.googleapis.com/css?family=Fira+Code:500&subset=latin,latin-ext);
 
+.page-header {
+    text-align: center;
+}
 
 code {
     font-family: 'Fira Code', Monaco, Menlo, Consolas, "Courier New", monospace !important;
