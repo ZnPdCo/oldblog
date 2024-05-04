@@ -258,7 +258,7 @@ article {
 }
 
 article.home .row {
-    height: 200px;
+    min-height: 200px;
 }
 
 article.home div a,
