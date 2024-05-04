@@ -6,6 +6,7 @@ exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
 title: ZnPdCo 的博客
+google_analytics: G-6FY9D20CBM
 
 kramdown:
   math_engine: null
