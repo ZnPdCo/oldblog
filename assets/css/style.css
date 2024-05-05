@@ -272,7 +272,7 @@ article.home pre a:hover {
     text-decoration: none;
 }
 
-article img {
+article.home img {
     max-width: 100%;
     max-height: 200px;
 }
