@@ -1,6 +1,14 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 @import url(//fonts.googleapis.com/css?family=Fira+Code:500&subset=latin,latin-ext);
 
+.sidebar {
+    min-height: 100%;
+}
+
+#contact-list-secondary {
+    display: none;
+}
+
 .page-header {
     text-align: center;
 }
