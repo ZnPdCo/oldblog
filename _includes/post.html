@@ -86,6 +86,13 @@
 
         <div class="clearfix"></div>
 
+        <div>
+            <h4 class="section-title">评论</h4>
+            {% include giscus.html %}
+        </div>
+        
+        <div class="clearfix"></div>
+
         <ul class="pager">
             {% if page.previous %}
             <li class="previous"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}"
