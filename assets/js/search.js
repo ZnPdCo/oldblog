@@ -5,7 +5,8 @@
  */
 
 // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
-var elSearchOpen = document.querySelector('.search-open'),
+var elSearchBg = document.querySelector('.search-bg'),
+    elSearchOpen = document.querySelector('.search-open'),
     elSearchBox = document.querySelector('.search'),
     elSearchBtn = document.querySelector('.search-start'),
     elSearchClear = document.querySelector('.search-clear'),
@@ -57,8 +58,9 @@ xhr.onreadystatechange = function() {
       // console.log(arrTitles[i]);
     }
 
-    // 内容加载完毕后显示搜索框
+    // 内容加载完毕后隐藏搜索框
     elSearchBox.style.display = 'none';
+    elSearchBg.style.display = 'none';
   }
 };
 
@@ -101,6 +103,7 @@ function searchConfirm() {
 function searchClear() {
   elSearchInput.value = '';
   elSearchBox.style.display = 'none';
+  elSearchBg.style.display = 'none';
   elSearchClear.style.display = 'none';
   elSearchResults.style.display = 'none';
   elSearchResults.classList.remove('result-item');
@@ -111,6 +114,8 @@ function searchInit() {
   arrResults = [];
   indexItem = [];
   elSearchResults.innerHTML = '';
+  elSearchBox.style.display = 'block';
+  elSearchBg.style.display = 'block';
   elSearchClear.style.display = 'block';
   elSearchResults.style.display = 'block';
   elSearchResults.classList.add('result-item');
