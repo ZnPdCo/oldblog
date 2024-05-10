@@ -98,7 +98,6 @@ function searchClear() {
   elSearchInput.value = '';
   elSearchBox.style.display = 'none';
   elSearchBg.style.display = 'none';
-  elSearchClear.style.display = 'none';
   elSearchResults.style.display = 'none';
   elSearchResults.classList.remove('result-item');
 }
@@ -110,7 +109,6 @@ function searchInit() {
   elSearchResults.innerHTML = '';
   elSearchBox.style.display = 'block';
   elSearchBg.style.display = 'block';
-  elSearchClear.style.display = 'block';
   elSearchResults.style.display = 'block';
   elSearchResults.classList.add('result-item');
 }
