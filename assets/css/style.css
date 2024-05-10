@@ -1,6 +1,18 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 @import url(//fonts.googleapis.com/css?family=Fira+Code:500&subset=latin,latin-ext);
 
+.search-results {
+    color: white;
+}
+
+.search-results a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #f2756a;
+}
+.search-results a:hover {
+    color: #e74c3c;
+}
+
 .search {
     display: none;
     position: fixed;

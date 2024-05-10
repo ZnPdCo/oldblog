@@ -8,8 +8,6 @@
 var elSearchBg = document.querySelector('.search-bg'),
     elSearchOpen = document.querySelector('.search-open'),
     elSearchBox = document.querySelector('.search'),
-    elSearchBtn = document.querySelector('.search-start'),
-    elSearchClear = document.querySelector('.search-clear'),
     elSearchInput = document.querySelector('.search-input'),
     elSearchResults = document.querySelector('.search-results');
 
@@ -66,10 +64,6 @@ xhr.onreadystatechange = function() {
 
 xhr.open('get', '/feed.xml', true);
 xhr.send();
-
-// 绑定按钮事件
-elSearchBtn.onclick = searchConfirm;
-elSearchClear.onclick = searchClear;
 
 // 输入框内容变化后就开始匹配，可以不用点按钮
 // 经测试，onkeydown, onchange 等方法效果不太理想，
