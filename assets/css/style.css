@@ -1,6 +1,14 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 @import url(//fonts.googleapis.com/css?family=Fira+Code:500&subset=latin,latin-ext);
 
+.search {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
 
 blockquote p {
     font-size: 14px;
