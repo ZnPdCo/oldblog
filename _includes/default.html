@@ -65,6 +65,14 @@
                 <i class="fa-solid fa-envelope"></i>
             </a>
             {% endif %}
+            <script async src="/assets/js/search.js"></script>
+
+            <div class="search">
+                <i class="material-icons search-icon search-start">search</i>
+                <input type="text" class="search-input" placeholder="Searching..." />
+                <i class="material-icons search-icon search-clear">clear</i>
+                <div class="search-results z-depth-4"></div>
+            </div>
             <a class="navbar-brand" href="{{ site.BASE_PATH }}/">
                 <img src="{{site.author.icon}}" style="height:35px;" class="img-circle" />
                 {{ site.title }}
