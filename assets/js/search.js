@@ -5,7 +5,8 @@
  */
 
 // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
-var elSearchBox = document.querySelector('.search'),
+var elSearchOpen = document.querySelector('.search-open'),
+    elSearchBox = document.querySelector('.search'),
     elSearchBtn = document.querySelector('.search-start'),
     elSearchClear = document.querySelector('.search-clear'),
     elSearchInput = document.querySelector('.search-input'),
@@ -57,7 +58,7 @@ xhr.onreadystatechange = function() {
     }
 
     // 内容加载完毕后显示搜索框
-    elSearchBox.style.display = 'block';
+    elSearchBox.style.display = 'none';
   }
 };
 
@@ -72,6 +73,7 @@ elSearchClear.onclick = searchClear;
 // 经测试，onkeydown, onchange 等方法效果不太理想，
 // 存在输入延迟等问题，最后发现触发 input 事件最理想，
 // 并且可以处理中文输入法拼写的变化
+elSearchOpen.onclick = function() {elSearchBox.style.display = 'black';}
 elSearchInput.oninput = function() { setTimeout(searchConfirm, 0); };
 elSearchInput.onfocus = function() { isSearchFocused = true; };
 elSearchInput.onblur = function() { isSearchFocused = false; };
@@ -98,6 +100,7 @@ function searchConfirm() {
 /** 搜索清空 */
 function searchClear() {
   elSearchInput.value = '';
+  elSearchBox.style.display = 'none';
   elSearchClear.style.display = 'none';
   elSearchResults.style.display = 'none';
   elSearchResults.classList.remove('result-item');
@@ -206,13 +209,3 @@ function searchMatching(arrTitles, arrContents, input) {
 };
 
 window.addEventListener('load', searchClear);
-
-// 搜索快捷键
-document.addEventListener('keydown', function(evt) {
-    if (isSearchFocused) return;
-    if (evt.key === '/') {
-        evt.preventDefault();
-        elSearchInput.focus();
-        window.isSearchFocused = true;
-    }
-});

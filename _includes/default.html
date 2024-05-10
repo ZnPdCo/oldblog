@@ -66,9 +66,13 @@
             </a>
             {% endif %}
             <script async src="/assets/js/search.js"></script>
-            <div class="search">
+            <a type="button" class="navbar-toggle nav-link search-open">
                 <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <div class="search">
+                <i class="material-icons search-icon search-start">search</i>
                 <input type="text" class="search-input" placeholder="Searching..." />
+                <i class="material-icons search-icon search-clear">clear</i>
                 <div class="search-results z-depth-4"></div>
             </div>
             <a class="navbar-brand" href="{{ site.BASE_PATH }}/">
