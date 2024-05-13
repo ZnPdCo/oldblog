@@ -63,6 +63,7 @@ xhr.send();
 // 存在输入延迟等问题，最后发现触发 input 事件最理想，
 // 并且可以处理中文输入法拼写的变化
 $('.search-open').click(function() {searchInit()});
+$('.search-bg').click(function() {searchClear()});
 elSearchInput.oninput = function() { setTimeout(searchConfirm, 0); };
 elSearchInput.onfocus = function() { isSearchFocused = true; };
 elSearchInput.onblur = function() { isSearchFocused = false; };
@@ -70,7 +71,7 @@ elSearchInput.onblur = function() { isSearchFocused = false; };
 /** 搜索确认 */
 function searchConfirm() {
   if (elSearchInput.value == '') {
-    searchClear();
+    // searchClear();
   } else if (elSearchInput.value.search(/^\s+$/) >= 0) {
     // 检测输入值全是空白的情况
     searchInit();
