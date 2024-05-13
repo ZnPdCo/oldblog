@@ -5,10 +5,7 @@
  */
 
 // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
-var elSearchBg = document.querySelector('.search-bg'),
-    elSearchOpen = document.querySelector('.search-open'),
-    elSearchBox = document.querySelector('.search'),
-    elSearchInput = document.querySelector('.search-input'),
+var elSearchInput = document.querySelector('.search-input'),
     elSearchResults = document.querySelector('.search-results');
 
 // 声明保存文章的标题、链接、内容的数组变量
@@ -55,10 +52,6 @@ xhr.onreadystatechange = function() {
       //                 .nodeValue.replace(/<.*?>/g, ''));
       // console.log(arrTitles[i]);
     }
-
-    // 内容加载完毕后隐藏搜索框
-    elSearchBox.style.display = 'none';
-    elSearchBg.style.display = 'none';
   }
 };
 
@@ -69,7 +62,7 @@ xhr.send();
 // 经测试，onkeydown, onchange 等方法效果不太理想，
 // 存在输入延迟等问题，最后发现触发 input 事件最理想，
 // 并且可以处理中文输入法拼写的变化
-elSearchOpen.onclick = function() {searchInit()}
+$('.search-open').click(function() {searchInit()});
 elSearchInput.oninput = function() { setTimeout(searchConfirm, 0); };
 elSearchInput.onfocus = function() { isSearchFocused = true; };
 elSearchInput.onblur = function() { isSearchFocused = false; };
@@ -96,8 +89,8 @@ function searchConfirm() {
 /** 搜索清空 */
 function searchClear() {
   elSearchInput.value = '';
-  elSearchBox.style.display = 'none';
-  elSearchBg.style.display = 'none';
+  $('.search').hide();
+  $('.search-bg').hide();
   elSearchResults.style.display = 'none';
   elSearchResults.classList.remove('result-item');
 }
@@ -107,8 +100,8 @@ function searchInit() {
   arrResults = [];
   indexItem = [];
   elSearchResults.innerHTML = '';
-  elSearchBox.style.display = 'block';
-  elSearchBg.style.display = 'block';
+  $('.search').show();
+  $('.search-bg').show();
   elSearchResults.style.display = 'block';
   elSearchResults.classList.add('result-item');
 }
