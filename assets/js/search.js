@@ -70,9 +70,7 @@ elSearchInput.onblur = function() { isSearchFocused = false; };
 
 /** 搜索确认 */
 function searchConfirm() {
-  if (elSearchInput.value == '') {
-    // searchClear();
-  } else if (elSearchInput.value.search(/^\s+$/) >= 0) {
+  if (elSearchInput.value.search(/^\s+$/) >= 0) {
     // 检测输入值全是空白的情况
     searchInit();
     var itemDiv = tmpDiv.cloneNode(true);
