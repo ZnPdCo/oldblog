@@ -9,7 +9,9 @@ title: ZnPdCo 的博客
 google_analytics: G-6FY9D20CBM
 
 kramdown:
-  math_engine: null
+  math_engine: sskatex
+  math_engine_opts:
+    katex_js: './assets/resources/katex/katex.min.js'
 
 defaults:
   -
