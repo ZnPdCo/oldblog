@@ -7,7 +7,6 @@ highlighter: rouge
 markdown: kramdown
 title: ZnPdCo 的博客
 google_analytics: G-6FY9D20CBM
-imagehost: https://cdn.jsdelivr.net/gh/znpdco/blogimage # cdn的图床地址，直接用github加载太慢了
 
 kramdown:
   math_engine: null
