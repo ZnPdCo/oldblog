@@ -1,0 +1,21 @@
+.toc {
+    overflow: auto;
+    height: 350px;
+}
+
+.toc li {
+    list-style-type: square;
+}
+
+.toc li a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #f2756a;
+}
+
+.toc li a:hover {
+    color: #e74c3c;
+}
+
+.toc ul {
+    padding-left: 15px;
+}

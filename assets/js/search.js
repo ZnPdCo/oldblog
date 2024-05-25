@@ -43,14 +43,6 @@ xhr.onreadystatechange = function() {
                          .getElementsByTagName('title')[0]
                          .childNodes[0]
                          .nodeValue.replace(/<.*?>/g, '');
-      // console.log(arrItems[i]);
-      // console.log(arrItems[i].getElementsByTagName('title')[0]);
-      // console.log(arrItems[i].getElementsByTagName('title')[0].childNodes[0]);
-      // console.log(arrItems[i]
-      //                 .getElementsByTagName('title')[0]
-      //                 .childNodes[0]
-      //                 .nodeValue.replace(/<.*?>/g, ''));
-      // console.log(arrTitles[i]);
     }
   }
 };

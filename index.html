@@ -66,8 +66,7 @@ tagline:
 
 
 {% for post in paginator.posts %}
-{% if post.top %}
-{% else %}
+{% unless post.top %}
 
 <article class="home">
 
@@ -120,7 +119,7 @@ tagline:
     <a class="btn btn-default" href="{{ site.BASE_PATH }}{{ post.url }}">继续阅读 &rarr;</a>
 
 </article>
-{% endif %}
+{% endunless %}
 {% endfor %}
 <hr />
 

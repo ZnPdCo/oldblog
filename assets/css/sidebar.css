@@ -1,0 +1,30 @@
+.sidebar {
+    min-height: 100%;
+    position: fixed;
+    top: 0px;
+    padding-top: 10%;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar-header .title {
+    letter-spacing: 3px;
+}
+
+.sidebar-header .title a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact-list-secondary {
+    opacity: 0;
+    transition: all .5s;
+}
+#contact-list:hover #contact-list-secondary {
+    opacity: 1;
+}
