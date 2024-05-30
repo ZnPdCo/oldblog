@@ -120,27 +120,12 @@ article .share .btn {
     transition: color .2s ease-out, background 1s ease-in;
 }
 
-#contact-list li:hover .fa-twitter,
 article .share .twitter:hover {
     color: #00ACEE;
     border-color: #00ACEE;
 }
 
-#contact-list li:hover .fa-linkedin {
-    color: #1D87BD;
-}
-
-#contact-list li:hover .fa-envelope {
-    color: #E93E30;
-}
-
-#contact-list li:hover .fa-pinterest {
-    color: #CC2127;
-}
-
-#contact-list li:hover .fa-rss {
-    color: #e74c3c;
-}
+#contact-list li:hover i
 
 article .share .facebook:hover {
     color: #43609C;
