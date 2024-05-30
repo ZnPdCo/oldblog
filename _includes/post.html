@@ -66,7 +66,7 @@
         <hr>
 
         <div>
-            <section class="share col-sm-6">
+            <section class="share">
                 <h4 class="section-title">分享</h4>
                 <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}"
                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
@@ -84,12 +84,6 @@
                   Google+
                 </a>
               </section>
-
-            <section class="col-sm-6 author">
-                <img src="{{site.author.icon}}" style="height:35px;" class="img-rounded author-image" />
-                <h4 class="section-title author-name">{{site.author.name}}</h4>
-                <p class="author-bio">{{site.author.bio}}</p>
-            </section>
         </div>
 
         <div class="clearfix"></div>
