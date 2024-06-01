@@ -68,21 +68,15 @@
         <div>
             <section class="share">
                 <h4 class="section-title">分享</h4>
-                <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text={{page.title | encode}}{% if site.author.twitter%}&via={{site.author.twitter}}{% endif %}"
-                   onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                   <i class="fa-brands fa-twitter"></i>
-                  Twitter
-                </a>
-                <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
-                   onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                   <i class="fa-brands fa-facebook"></i>
-                  Facebook
-                </a>
-                <a class="btn btn-default btn-sm gplus"
-                   onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
-                   <i class="fa-brands fa-google-plus-g"></i>
-                  Google+
-                </a>
+                <!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                <a class="a2a_button_wechat"></a>
+                <a class="a2a_button_x"></a>
+                <a class="a2a_button_facebook"></a>
+                </div>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END -->
               </section>
         </div>
 
